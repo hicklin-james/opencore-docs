@@ -1,3 +1,9 @@
 [submodule "Lilu-and-Friends"]
 	path = Lilu-and-Friends
 	url = https://github.com/corpnewt/Lilu-and-Friends
+[submodule "edk2"]
+	path = edk2
+	url = https://github.com/tianocore/edk2
+[submodule "gfxutil"]
+	path = gfxutil
+	url = https://github.com/acidanthera/gfxutil
