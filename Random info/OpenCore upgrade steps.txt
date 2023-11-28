@@ -1,0 +1,19 @@
+OpenCore upgrade steps
+----------------------
+
+1. Backup existing EFI
+  - mount with sudo mount -t msdos /dev/disk3s1 /Volumes/efi
+
+2. Replace EFI/BOOT/BOOTx64.efi, EFI/OC/OpenCore.efi, and EFI/OC/Drivers/OpenRuntime.efi
+
+3. Compare new sample config file with existing config file
+  - ./OCConfigCompare.command
+  - Add/remove changes
+
+4. Verify that new config is valid
+  - ./ocvalidate /Volumes/efi/EFI/OC/config.plist
+
+5. Restart - ensure that you can boot
+
+6. Update kexts using Lilu and friends
+  - ./Run.command
